@@ -1,0 +1,9 @@
+<h3>Detalhes de {{$ctrl.config.nomeDoItemDaColecao}}</h3>
+<p ng-repeat="propriedade in $ctrl.config.propriedadesDosItens">
+  <span><strong>{{propriedade}} </strong></span>
+  <span>{{$ctrl.item[propriedade]}}</span>
+</p>
+
+<a class="btn btn-default"
+   ui-sref="{{$ctrl.config.nomeDaColecao+'.editar'}}">Editar</a>
+<a class="btn btn-default" ng-click="$ctrl.deletarItem()">Deletar</a>

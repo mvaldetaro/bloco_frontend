@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Visita Rio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="assets/scss/vendor/bootstrap.css">
+
+  <!--link rel="stylesheet" href="assets/scss/vendor/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="assets/scss/vendor/ripples.min.css"-->
+
+  <link rel="stylesheet" href="assets/scss/custom/main.css">
+
+  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Visita Rio</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span aria-hidden="true" class="icon-bar"></span>
+          <span aria-hidden="true" class="icon-bar"></span>
+          <span aria-hidden="true" class="icon-bar"></span>
+        </button>
+        <nav class="navbar-right">
+          <ul class="nav">
+            <li><a href="favoritos.html" title="Meus favoritos" aria-label="Meus favoritos"><i aria-hidden="true" class="material-icons">&#xE87E;</i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="text-right">
+            <a href="categoria.html" accesskey="t" title="Pontos Turísticos">Pontos Turísticos <span aria-hidden="true">[t]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="p" title="Praias">Praias <span aria-hidden="true">[p]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="c" title="Onde Comer">Onde Comer <span aria-hidden="true">[c]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="s" title="Onde Dormir">Onde Dormir <span aria-hidden="true">[s]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="b" title="Banheiros">Banheiros <span aria-hidden="true">[b]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="h" title="Hospitais">Hospitais <span aria-hidden="true">[h]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="d" title="Delegacias">Delegacias <span aria-hidden="true">[d]</span></a>
+          </li>
+          <li class="text-right">
+            <a href="categoria.html" accesskey="e" title="Eventos">Eventos <span aria-hidden="true">[e]</span></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </nav>
+
+  <header class="header text-center">
+    <div class="container">
+      <h1>Visita Rio</h1>
+      <p>Encontre Pontos Turísticos, Praias, Onde Comer, Onde Dormir, Eventos <br>e muito mais em qualquer lugar da cidade do Rio de Janeiro.</p>
+      <span class="block-line"></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <main class="main">
+          <div class="search col-lg-8 col-lg-offset-2">
+            <form action="resultado-busca.html" method="post">
+              <label for="busca" class="sr-only">Buscar</label>
+              <div class="input-group input-group-lg">
+                <input type="text" aria-label="Buscar" class="form-control text-center" id="busca" name="busca"  placeholder="Quero encontrar..." autofocus>
+                <span class="input-group-btn">
+                  <button type="submit" tabindex="0" class="btn btn-primary btn-lg">Pesquisar</button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+          <div class="clearfix"></div>
+          <!-- TODO: inserir tabindex -->
+          <nav class="categories">
+            <ul>
+              <li>
+                <a tabindex="1" href="categoria.html" title="Pontos Turísticos"> <i aria-hidden="true" class="material-icons hidden-xs">&#xE53F;</i> Pontos Turísticos</a>
+              </li>
+              <li>
+                <a tabindex="2" href="categoria.html" title="Praias"><i aria-hidden="true" class="material-icons hidden-xs">&#xEB3E;</i> Praias</a>
+              </li>
+              <li>
+                <a tabindex="3" href="categoria.html" title="Onde Comer"><i aria-hidden="true" class="material-icons hidden-xs">&#xE56C;</i> Onde Comer</a>
+              </li>
+              <li>
+                <a tabindex="4" href="categoria.html" title="Onde Dormir"><i aria-hidden="true" class="material-icons hidden-xs">&#xE53A;</i> Onde Dormir</a>
+              </li>
+              <li>
+                <a tabindex="5" href="categoria.html" title="Banheiros"><i aria-hidden="true" class="material-icons hidden-xs">&#xE543;</i> Banheiros</a>
+              </li>
+              <li>
+                <a tabindex="6" href="categoria.html" title="Hospitais"> <i aria-hidden="true" class="material-icons hidden-xs">&#xE548;</i> Hospitais</a>
+              </li>
+              <li>
+                <a tabindex="7" href="categoria.html" title="Delegacias"><i aria-hidden="true" class="material-icons hidden-xs">&#xE559;</i> Delegacias</a>
+              </li>
+              <li>
+                <a tabindex="8" href="categoria.html" title="Eventos"><i aria-hidden="true" class="material-icons">&#xE878;</i>Eventos</a>
+              </li>
+            </ul>
+          </nav>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-center">Visita Rio © 2017 - Infnet</p>
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/material.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

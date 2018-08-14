@@ -1,0 +1,24 @@
+<h3>Editor de {{$ctrl.config.nomeDoItemDaColecao}}</h3>
+<form>
+  <div class="form-group">
+    <label>Nome:</label>
+    <input type="text"
+            class="form-control"
+            placeholder="{{$ctrl.item.nome}}"
+            ng-model="$ctrl.item.nome">
+  </div>
+  <div class="form-group">
+    <label>Descrição:</label>
+    <textarea class="form-control" ng-model="$ctrl.item.descricao" rows="4">
+      {{$ctrl.item.descricao}}
+    </textarea>
+  </div>
+  <button class="btn btn-primary form-control"
+          ng-click="$ctrl.editing ?
+          $ctrl.modificarItem({$event:$ctrl.item}) :
+          $ctrl.novoItem({$event:$ctrl.item})">
+  Enviar
+</button>
+<span>{{$ctrl.erro}}</span>
+
+</form>

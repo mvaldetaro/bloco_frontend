@@ -1,0 +1,91 @@
+.carousel {
+  background-color: #03a9f5;
+  height: 560px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel-arrowleft,
+.carousel-arrowright {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.carousel-arrowleft {
+  left: 16px;
+  top: 50%;
+}
+
+.carousel-arrowright {
+  right: 16px;
+  top: 50%;
+}
+
+.carousel-warp {}
+
+.carousel-content {
+  padding: 0;
+}
+
+.carousel-content .banner {
+    position: absolute;
+    color: rgba(255, 255, 255, .87);
+    width: 500px;
+    height: auto;
+    text-align: left;
+    right: 411px;
+    bottom: 25%;
+    background: rgba(0, 0, 0, .2);
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+
+.carousel-content .banner h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.carousel-content .banner h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.carousel-content .banner p {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #fff;
+  margin-top: 16px;
+}
+
+.carousel-item {}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 48px;
+  left: 43%;
+}
+
+.carousel-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-nav-item--current {
+
+}
+
+.carousel-nav-item {
+  display: inline-block;
+  padding: 16px;
+}

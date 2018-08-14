@@ -1,0 +1,41 @@
+Criada duas activities, uma principal com o formulário e uma segunda para os resultados;
+
+Foi definido as strings e dimens do projeto;
+
+Implentado o botão de voltar na topbar do app;
+
+Implementado o layout das duas activities;
+
+Implementado a relação e navegação entre as duas activities;
+
+Definido as váriasvies e metodos a serem utilizados para o calculo;
+
+Implemnetadas as váriaveis;
+
+Implementados os metodos;
+
+
+https://gist.github.com/mvaldetaro/2601ba2f7f1ba9080191c090b5b56725
+
+Magno Valdetaro de Oliveira
+
+mvaldetaro@gmail.com
+
+104.037.827-75
+
+21 988779444
+
+Prezado,
+
+Solicitei o cancelamento do pedido de número 03-495549666, por duas vezes, uma através da ferramenta de cancelamento antes da nota ser emitida, verifiquei e apareceu os pedido em vermelho sinalizando que havia sido cancelado. Para minha surpresa dias depois (01/11/2017) chega o pedido no meu endereço! Solicitei para a pessoa que recebeu o entregador para que não aceitasse a entrega e fizesse uma anotação na nota de que o pedido foi cancelado. no mesmo fiz contato através da ferramente "Falar sobre está entrega", solicitando o cancelamento e estorno do valor na minha fatura. Aparentemente o contato foi feito com o marktplace TRICAE, que não me deu resposta até o momento. No dia 2 de novembro recebi a fatura. Solicito novamente agora diretamente ao submarino, que esse valor seja estornado e gerado uma nova fatura debitando o valor.
+
+Muito obrigado
+
+//android:cardCornerRadius="2dp"
+    //android:cardElevation="2dp"
+
+
+
+
+
+

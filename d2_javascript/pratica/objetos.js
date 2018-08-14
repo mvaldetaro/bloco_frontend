@@ -1,0 +1,1 @@
+let aluno = { nome: 'Magno'};

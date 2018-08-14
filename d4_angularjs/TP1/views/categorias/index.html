@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="todo">
+<head>
+  <meta charset="UTF-8">
+  <title>TODOs</title>
+  <script src="../../js/angular.min.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body ng-controller="categoriaCtrl as $ctrl">
+  <div class="container" >
+    <!-- barra titulo e nav -->
+    <div class="nav-bar">
+      <div class="brand">TODOs</div>
+      <nav class="menu">
+        <ul>
+          <li><a ng-click="home()">+Categoria</a></li>
+          <li><a ng-click="categorias()">+Tarefa</a></li>
+          <li><a ng-href="/views/home/index.html">Ver tarefas em lista única</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <div class="tarefas" ng-repeat="categoria in $ctrl.categorias">
+        <h2>{{categoria}}</h2>
+        <ul>
+          <li ng-repeat="tarefa in $ctrl.tarefas | filter:{categoria} | orderBy: 'feito'">
+            <input id="checkBox" type="checkbox" ng-model="tarefa.feito">
+            <span class="{{tarefa.feito}} nome">{{tarefa.nome}}</span>
+            <span class="badge">{{tarefa.categoria}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="../../app.js"></script>
+  <script src="categoria.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#contato form {
+  padding: 10px;
+  background: #f2eded;
+  margin-top: 15px;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contato input,
+#contato select,
+#contato textarea {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #3E2723;
+  outline: none;
+}
+
+#contato input:focus,
+#contato select:focus,
+#contato textarea:focus {
+  box-shadow: 0 0 10px #FFEB3B;
+}
+
+#contato input[type="submit"] {
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  background: #3E2723;
+  padding: 12px;
+  cursor: pointer;
+  transition: .2s background ease-out;
+}
+
+#contato input[type="submit"]:hover {
+  background: #795548;
+  transition: .2s background ease-in;
+}
+
+@media (min-width: 720px) {
+  #contato form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 15px;
+  }
+}
+
+@media (min-width: 960px) {
+  #contato form {
+    width: 50%;
+  }
+}

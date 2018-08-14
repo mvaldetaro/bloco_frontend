@@ -1,0 +1,327 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body > .container,
+body > .header {
+  padding: 60px 15px 0;
+}
+
+body > .container-fluid {
+  padding-top: 50px;
+}
+
+a:focus {
+  color: #F44336;
+}
+
+.header h1 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background: url('../../images/rio-de-janeiro.jpg') no-repeat center center;
+    background-size: cover;
+    height: 460px;
+    position: relative;
+  }
+  .header h1 {
+    margin-top: 225px;
+    font-size: 6em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.87);
+    z-index: 1;
+    position: relative;
+  }
+
+  .header p {
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.87);
+  }
+
+  .header .block-line {
+    display: block;
+    position: absolute;
+    bottom: 79px;
+    left: 50%;
+    margin-left: -150px;
+    width: 292px;
+    height: 300px;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, .05);
+    z-index: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-size: cover;
+    height: 500px;
+  }
+
+  .header h1 {
+    margin-top: 240px;
+  }
+
+  .header p {
+    margin-top: 32px;
+  }
+
+  .header .block-line {
+    bottom: 100px;
+  }
+}
+
+.categories {
+  padding: 32px 0;
+}
+
+.categories ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.categories ul li {
+  font-size: 1.2em;
+  border-bottom: 1px solid #CFD8DC;
+  clear: both;
+}
+
+.categories ul li:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .categories ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+  }
+  .categories ul li:nth-child(1n+5) {
+    border-bottom: none;
+  }
+  .categories ul li a i {
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .categories ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12%;
+    border-bottom: none;
+    font-size: .85em;
+  }
+  .categories ul li a i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.categories ul li a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  transition: .2s all ease-in-out;
+}
+
+.categories ul li a:hover {
+  background-color: #CFD8DC;
+  color: rgba(0, 0, 0, .87);
+}
+
+.main-bar {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 16px;
+  background-color: #ECEFF1;
+}
+
+.main-bar .search {
+  margin-bottom: 16px;
+}
+
+.main-bar .head {
+  background-color: #CFD8DC;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+.main-bar .head .title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.main-bar .head .actions a span {
+  display: none;
+}
+
+.main-bar .head .actions a {
+  display: inline-block;
+  float: right;
+  padding: 8px;
+  width: 40px;
+  width: 40px;
+}
+
+.main-bar .list {
+  margin-left: -15px;
+  margin-right: -15px;
+  height: calc(100vh - (110px + 77px + 32px + 34px) )
+}
+
+.main-bar .list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-bar .list ul li {
+  border-bottom: 1px solid #CFD8DC;
+  overflow: hidden;
+  clear: both;
+}
+
+.main-bar .list ul li img {
+  float: left;
+  margin-right: 8px;
+  width: 100px;
+  height: 100px;
+}
+
+.main-bar .list ul li h3 {
+  margin-top: 8px;
+  font-size: 1.4em;
+}
+
+.main-bar .map iframe {
+  width: 100%;
+  height: 220px;
+}
+
+.main-bar .local-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.main-bar .content {
+  padding: 32px 0;
+}
+
+.main-bar .content .material-icons {
+  margin-right: 8px;
+}
+
+@media (min-width: 992px) {
+  .main-bar {
+    height: calc(100vh - 110px);
+  }
+
+  .map {
+    height: calc(100vh - 110px);
+  }
+}
+
+.map {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.favorite-list {
+  padding: 32px 0;
+}
+
+.favorite-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-list ul li {
+  margin-bottom: 16px;
+}
+
+.favorite-list ul li img {
+  float: left;
+}
+
+.favorite-list ul li h3 {
+  margin-top: 8px;
+}
+
+.favorite-list ul li button {
+  position: absolute;
+  right: 16px;
+  top:  50%;
+  margin-top: -17px;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-color: #BDBDBD;
+}
+
+.footer p {
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.shadow {
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+.overflow-y {
+  overflow-y: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.padder {
+  padding: 16px;
+  display: inline-block;
+}

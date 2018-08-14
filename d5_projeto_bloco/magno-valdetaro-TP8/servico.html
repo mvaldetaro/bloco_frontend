@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Serviço</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="assets/scss/vendor/bootstrap.css">
+
+  <!--link rel="stylesheet" href="assets/scss/vendor/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="assets/scss/vendor/ripples.min.css"-->
+
+  <link rel="stylesheet" href="assets/scss/custom/main.css">
+
+  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top shadow">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Visita Rio</a>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar-right">
+          <ul class="nav">
+            <li><a href="favoritos.html" title="Meus favoritos"><i class="material-icons">&#xE87E;</i></a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="text-right">
+            <a href="categorias.html" title="Pontos Turísticos">Pontos Turísticos</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Praias">Praias</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Onde Comer">Onde Comer</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Onde Dormir">Onde Dormir</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Banheiros">Banheiros</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Hospitais">Hospitais</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Delegacias">Delegacias</a>
+          </li>
+          <li class="text-right">
+            <a href="categorias.html" title="Eventos">Eventos</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+
+        <main class="main-bar">
+          <div class="search">
+            <form action="resultado-busca.html">
+              <div class="row">
+               <div class="col-lg-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="search" placeholder="Quero encontrar...">
+                  <span class="input-group-btn"><button class="btn btn-primary" type="submit">Pesquisar</button></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="local-image">
+          <img src="assets/images/pdp.jpg" class="img-responsive" alt="Parque dos Patins">
+        </div>
+        <div class="head shadow">
+          <div class="row">
+            <div class="col-xs-6">
+              <span class="label label-info">Pontos Turisticos</span>
+              <span class="label label-success">9.1</span>
+              <h2 class="title">Parque dos Patins</h2>
+            </div>
+            <div class="col-xs-6">
+              <nav class="actions">
+                <a href="javascript:;"><i class="material-icons">share</i><span>Compartilhar</span></a>
+                <a href="javascript:;"><i class="material-icons">&#xE157;</i><span>link</span></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <aside class="map visible-xs visible-sm">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d40391.415922616834!2d-43.20007412333552!3d-22.922831733258104!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1494677943038" frameborder="0" allowfullscreen></iframe>
+        </aside>
+        <div class="content">
+          <p class="valign-center"><i class="material-icons">place</i> <span>Av. Borges de Medeiros, s/n, Rio de Janeiro</span></p>
+          <span class="clearfix"></span>
+          <p class="valign-center"><i class="material-icons">phone</i> <span>21 2345-6789</span></p>
+          <span class="clearfix"></span>
+          <p class="valign-center"><i class="material-icons">link</i> <span><a href="http://www.rio.rj.gov.br/" title="Prefeitura do Rio de Janeiro" rel="external">http://www.rio.rj.gov.br/</a></span></p>
+          <hr>
+          <div class="text-center">
+            <a href="categorias.html" class="btn btn-block btn-primary"> <span class="valign-center"><i class="material-icons">favorite_border</i> <span>Marcar como Favorito</span></span></a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="col-md-8 col-lg-9">
+      <aside class="map hidden-xs hidden-sm ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d40391.415922616834!2d-43.20007412333552!3d-22.922831733258104!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1494677943038" frameborder="0" allowfullscreen></iframe>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- internas -->
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">sdasd</div>
+      <div class="col-md-8 col-lg-9">asdasd</div>
+    </div>
+  </div> -->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-center">Visita Rio © 2017 - Infnet</p>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/material.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

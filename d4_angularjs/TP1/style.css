@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+.nav-bar .brand {
+  font-size: 2em;
+  font-weight: 600;
+  color: #607D8B;
+}
+
+.menu {
+  padding: 16px 0;
+  text-align: right;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #2196F3;
+  color: rgba(255, 255, 255, .87);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2979FF
+}
+
+.btn.toogle {
+  background: #009688;
+}
+
+.btn.toogle:hover {
+  background: #26A69A;
+}
+
+
+
+.tarefas ul {
+  list-style: none;
+}
+
+.tarefas ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  border:  1px solid #CFD8DC;
+  border-radius: 3px;
+}
+
+.tarefas.concluidas .nome,
+.nome.true {
+  text-decoration: line-through red;
+}
+
+.badge {
+  display: inline-block;
+  color: rgba(255, 255, 255, .87);
+  background-color: #8BC34A;
+  text-transform: uppercase;
+  font-size: .75em;
+  border-radius: 3px;
+  padding: 3px 6px;
+  float: right;
+}
+
+.categorias_lista form input,
+.tarefas_lista form input,
+.tarefas_lista form select {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #B0BEC5;
+  margin-bottom: 8px;
+}
+
+input::placeholder{
+  color: #B0BEC5;
+}
+
+.categorias_lista ul,
+.tarefas_lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias_lista ul li,
+.tarefas_lista ul li {
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #CFD8DC;
+}
+
+.categorias_lista ul li:last-child,
+.tarefas_lista ul li:last-child {
+  border: none;
+}
+
+.alert {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.alert.success {
+  background-color: #4caf50;
+  color: rgba(255, 255, 255, .87);
+}
+
+.alert.error {
+  background-color: #F44336;
+  color: rgba(255, 255, 255, .87);
+}
+
+.alert.warning {
+  background-color: #FFEB3B;
+  color: rgba(0, 0, 0, .87);
+}
+
+.visible {
+  display: none;
+}

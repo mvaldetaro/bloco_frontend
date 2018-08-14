@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{$ctrl.titulo}}</h1>
+  <hr>
+  <div class="col-xs-6">
+    <lancamento-list
+      itens="$ctrl.lancamentos"
+      configuracao-init="$ctrl.configuracaoInit"
+      on-item-clicked="$ctrl.onLancamentoClicked($event)"
+      criar-novo-item="$ctrl.criarNovoLancamento($event)"
+      resetar-itens="$ctrl.resetarLancamentos($event)">
+    </lancamento-list>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

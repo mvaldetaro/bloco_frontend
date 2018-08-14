@@ -1,0 +1,79 @@
+@import "../../app-css-globals.scss";
+
+menu {
+  display: block;
+
+  .categories {
+    padding: 32px 0;
+  }
+
+  .categories ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories ul li {
+    font-size: 1.2em;
+    border-bottom: 1px solid #CFD8DC;
+    clear: both;
+  }
+
+  .categories ul li:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: 768px) {
+    .categories ul li {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 24%;
+    }
+    .categories ul li:nth-child(1n+5) {
+      border-bottom: none;
+    }
+    .categories ul li a i {
+      display: block;
+      width: 70px;
+      height: 70px;
+      font-size: 70px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .categories ul li {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 12%;
+      border-bottom: none;
+      font-size: .85em;
+    }
+    .categories ul li a i {
+      display: block;
+      width: 60px;
+      height: 60px;
+      font-size: 60px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .categories ul li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+  }
+
+  .categories ul li a:hover {
+    background-color: #CFD8DC;
+    color: rgba(0, 0, 0, .87);
+  }
+}
+
+
+
+

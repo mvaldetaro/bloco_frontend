@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Magno Valdetaro">
+  <meta name="description" content="TP2 da disciplina de Interfaces com HTML e CSS do Bloco de Desenvolvimento Front-End">
+  <meta name="keywords" content="html,css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombi Coffee</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <!--[if lt IE 9]>
+    <script src="html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body id="cardapio-page">
+  <div id="container">
+    <header class="header">
+      <h1>Kombi Coffee</h1>
+      <img src="images/logo_kombi_coffee.png" alt="Kombi Coffee" title="Kombi Coofee">
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="local.html">Local</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Contato</h1>
+      <!-- Form -->
+      <section>
+        <form action="#" method="post" class="contato_form col-1-2">
+          <div class="form_row">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          </div>
+          <div class="form_row">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="form_row">
+            <label for="comentario">Comentário:</label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" required></textarea>
+          </div>
+          <div class="form_row">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </section>
+
+      </main>
+      <hr>
+      <footer>
+        <p>Copyright</p>
+      </footer>
+    </div>
+
+  </body>
+  </html>

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-4">
+      <main class="main-bar" role="main">
+        <div class="search" role="search">
+          <form action="resultado" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="input-group">
+                  <label class="sr-only" for="buscar">Busca</label>
+                  <input type="text" class="form-control" id="buscar" name="buscar" placeholder="Quero encontrar...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-raised btn-primary" type="submit" role="button">Pesquisar</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="head shadow">
+          <div class="row">
+            <div class="col-xs-8">
+              <h2 class="title">Pontos Turisticos</h2>
+            </div>
+            <div class="col-xs-4">
+              <nav class="actions" role="navigation">
+                <a href="javascript:;" title="Compartilhar" tabindex="10"><i class="material-icons" aria-hidden="true">share</i> <span>Compartilhar Página</span></a>
+                <a href="#" title="Copiar Link" tabindex="11"><i class="material-icons" aria-hidden="true">&#xE157;</i> <span>Copiar Link</span></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="map visible-xs visible-sm" aria-hidden="true">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d40391.415922616834!2d-43.20007412333552!3d-22.922831733258104!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1494677943038" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="list overflow-y shadow" tabindex="12">
+          <ul>
+            <li ng-repeat="item in $ctrl.categorias" ng-click="$ctrl.goTo(item);">
+              <img src="http://lorempixel.com/150/150" alt="{{item.name}}">
+              <h3>{{item.name}}</h3>
+              <address>{{item.geoResult.address}}, {{item.geoResult.neighbourhood}}</address>
+              <span class="label label-info">9.1</span>
+            </li>
+          </ul>
+        </div>
+
+      </main>
+    </div>
+
+    <div class="col-md-8 col-lg-8">
+      <aside class="map hidden-xs hidden-sm" role="complementary">
+        <div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{$ctrl.googleMapsUrl}}">
+          <ng-map center="{{$ctrl.categorias[0].geoResult.point.lat}}, {{$ctrl.categorias[0].geoResult.point.lng}}" zoom="15" >
+            <marker ng-repeat="local in $ctrl.categorias | limitTo: 100"
+            position="{{local.geoResult.point.lat}}, {{local.geoResult.point.lng}}"
+            centered="true"></marker>
+          </ng-map>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>

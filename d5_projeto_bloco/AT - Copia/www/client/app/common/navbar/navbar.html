@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home" tabindex="0">{{$ctrl.titulo}}</a>
+        <button type="button"
+          aria-pressed="{{$ctrl.boo}}"
+          class="navbar-toggle collased"
+          ng-click="$ctrl.toggleNavBar()"
+          role="button">
+          <span class="sr-only">Menu</span>
+          <span aria-hidden="true" class="icon-bar"></span>
+          <span aria-hidden="true" class="icon-bar"></span>
+          <span aria-hidden="true" class="icon-bar"></span>
+        </button>
+      </div>
+      <nav class="navbar-collapse collapse" uib-collapse="!$ctrl.isNavBarCollapsed" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="text-right">
+            <a tabindex="1" ng-click="$ctrl.toggleNavBar()"  ui-sref="categoria.servicos({servico: 'pontos-turisticos'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="t" title="Pontos Turísticos">Pontos Turísticos <span aria-hidden="true" >[t]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="2" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'praias'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="p" title="Praias">Praias <span aria-hidden="true">[p]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="3" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'restaurantes'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="c" title="Onde Comer">Onde Comer <span aria-hidden="true">[c]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="4" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'hoteis'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="s" title="Onde Dormir">Onde Dormir <span aria-hidden="true">[s]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="5" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'banheiros'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="b" title="Banheiros">Banheiros <span aria-hidden="true">[b]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="6" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'postos-saude'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="h" title="Hospitais">Hospitais <span aria-hidden="true">[h]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="7" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'delegacias'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="d" title="Delegacias">Delegacias <span aria-hidden="true">[d]</span></a>
+          </li>
+          <li class="text-right">
+            <a tabindex="8" ng-click="$ctrl.toggleNavBar()" ui-sref="categoria.servicos({servico: 'jogos-olimpicos'})" ui-sref-opts="{reload: true}" ui-sref-active="active" accesskey="e" title="Eventos">Eventos <span aria-hidden="true">[e]</span></a>
+          </li>
+          <li class="text-right">
+              <a tabindex="9" ng-click="$ctrl.toggleNavBar()" ui-sref="favoritos" accesskey="f" title="Meus favoritos" aria-label="Meus favoritos">
+                <i aria-hidden="true" class="material-icons">&#xE87E;</i>
+                <span class="hidden-md hidden-lg">Meus favoritos [f]</span>
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>

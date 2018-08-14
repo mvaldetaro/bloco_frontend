@@ -1,0 +1,174 @@
+body {
+  background-color: #F7F7F7;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+h1, h2, h3 {
+  color: #4F2F24;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: .75em
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: .5em
+  font-style: italic;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+
+hr {
+  height: 1px;
+  display: block;
+  border: 0;
+  background: #ccc;
+}
+
+header,
+main {
+  margin: 0 32px;
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+  background: #fff;
+}
+
+.imgr {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.header {
+  margin-bottom: 1em;
+  padding: 1em 0;
+}
+
+.menu {
+  text-transform: uppercase;
+  display: block;
+  height: 40px;
+  background: #532D24;
+}
+
+.menu ul {
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 2.5em;
+  line-height: 40px;
+  text-align: center;
+}
+
+.menu ul li a:hover {
+  background: rgba(0, 0, 0, .3);
+}
+
+.table {
+  width: 100%;
+}
+
+.table tr td {
+  padding: 16px;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 33%;
+}
+
+.cardapio td > p {
+  font-weight: 600;
+  font-size: .85em;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+
+.cardapio .price {
+  font-size: 1.2em;
+}
+
+.row {
+  margin: 16px 0;
+}
+
+.contato_form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form_row {
+  margin: 16px 0;
+}
+
+.form_row label {
+  display: block;
+  padding: 8px 0;
+}
+
+.form_row input,
+.form_row textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form_row label + textarea {
+  display: block;
+}
+
+.form_row input[type="submit"] {
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  background: #532d24;
+  cursor: pointer;
+  width: 30%;
+}
+
+.form_row input[type="submit"]:hover {
+  background: #7c3423;
+}
+
+footer {
+  padding: 0 32px 32px 32px;
+}
+
+footer p {
+  font-size: .8em;
+  text-align: right;
+}
+
+

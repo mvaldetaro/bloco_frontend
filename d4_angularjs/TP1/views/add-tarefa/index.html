@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="todo">
+<head>
+  <meta charset="UTF-8">
+  <title>TODOs</title>
+  <script src="../../js/angular.min.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body ng-controller="addTarefaCtrl as $ctrl">
+  <div class="container" >
+    <div class="nav-bar">
+      <div class="brand">TODOs - {{$ctrl.titulo}}</div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a class="btn" href="../add-categoria/index.html">+ Categoria</a>
+        </li>
+        <li>
+          <a class="btn" href="../add-tarefa/index.html">+ Tarefa</a>
+        </li>
+        <li>
+          <a class="btn" href="../home/index.html" >Home</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="tarefas_lista">
+      <form ng-submit="$ctrl.add($ctrl.tarefa, $ctrl.categoria)">
+        <select ng-model="$ctrl.categoria">
+          <option value="" disabled selected>Selecione uma categoria</option>
+          <option ng-repeat="cat in $ctrl.categorias" value="{{cat}}">{{cat}}</option>
+        </select>
+        <input ng-model="$ctrl.tarefa" type="text" placeholder="Adicione uma tarefa e pressione enter">
+      </form>
+      <div class="{{$ctrl.alertClass}}">
+        {{$ctrl.msg}}
+      </div>
+      <div>
+        <h2>Lista de tarefas</h2>
+        <ul>
+          <li ng-repeat="tarefa in $ctrl.tarefas | filter:{feito:false} | orderBy:'$index':true">
+            <span class="{{tarefa.feito}} nome">{{tarefa.nome}}</span>
+            <span class="badge">{{tarefa.categoria}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="../../app.js"></script>
+  <script src="add-tarefa.js"></script>
+</body>
+</html>

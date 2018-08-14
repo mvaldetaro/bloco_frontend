@@ -1,0 +1,50 @@
+$primaryColor: #0277bd;
+$accentColor: #1de9b6;
+$bgColor: #fffff0;
+$darkBgColor: #263238;
+$lightBgColor: #37474f;
+$lightTextColor: #f5f5f5;
+$darkTextColor: #212121;
+$highlight: yellow;
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /*margin-bottom: 60px;*/
+}
+
+a:focus {
+  color: #F44336;
+}
+
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.shadow {
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+.overflow-y {
+  overflow-y: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.padder {
+  padding: 16px;
+  display: inline-block;
+}

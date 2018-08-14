@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 ng-bind="$ctrl.titulo"></h1>
+  </div>
+  <div class="col-xs-6">
+    <colecao-listar
+      colecao="$ctrl.usuarios"
+      configuracao-colecao="$ctrl.configuracaoColecao"
+      on-item-clicked="$ctrl.onUsuarioClicked($event)"
+      criar-novo-item="$ctrl.criarNovoUsuario($event)"
+      resetar-itens="$ctrl.resetarUsuarios($event)">
+    </colecao-listar>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

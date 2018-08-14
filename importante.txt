@@ -1,0 +1,51 @@
+Possibly unhandled rejection: {"data":"Cannot GET /api/categories\n","status":404,"config":{"method":"GET","transformRequest":[null],"transformResponse":[null],"jsonpCallbackParam":"callback","url":"/api/categories","headers":{"Accept":"application/json, text/plain, */*"}},"statusText":"Not Found"}
+
+
+UgPbPXWSqwIZhD3epvUD
+
+
+GET http://localhost:3000/api/categories 404 (Not Found)
+(anonymous) @ angular.js:12587
+sendReq @ angular.js:12332
+serverRequest @ angular.js:12084
+processQueue @ angular.js:16832
+(anonymous) @ angular.js:16876
+$digest @ angular.js:17971
+scopePrototype.$digest @ hint.js:1495
+$apply @ angular.js:18269
+scopePrototype.$apply @ hint.js:1558
+(anonymous) @ angular.js:20186
+completeOutstandingRequest @ angular.js:6274
+(anonymous) @ angular.js:6554
+angular.js:14525 
+
+Possibly unhandled rejection: {"data":"Cannot GET /api/categories\n","status":404,"config":{"method":"GET","transformRequest":[null],"transformResponse":[null],"jsonpCallbackParam":"callback","url":"/api/categories","headers":{"Accept":"application/json, text/plain, */*"}},"statusText":"Not Found"}
+
+
+http://localhost:3000/lancamento
+
+https://embed.plnkr.co/arsvfe/
+https://github.com/e-menezes/NG6-project/tree/tp4
+https://plnkr.co/edit/UgPbPXWSqwlZhD3epvUD?p=info
+https://embed.plnkr.co/UgPbPXWSqwlZhD3epvUD/
+https://jsfiddle.net/design_educacional/abxcw7qL/?utm_source=website&utm_medium=embed&utm_campaign=abxcw7qL
+
+carlos.bahiana@prof.infnet.edu.br
+coaching@infnet.edu.br
+
+https://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+https://github.com/e-menezes/NG6-project
+https://github.com/e-menezes/NG6-project/blob/tp4/client/app/components/usuarios/usuarios.controller.js
+https://jsfiddle.net/design_educacional/abxcw7qL/?utm_source=website&utm_medium=embed&utm_campaign=abxcw7qL
+https://embed.plnkr.co/UgPbPXWSqwlZhD3epvUD/
+https://plnkr.co/edit/UgPbPXWSqwlZhD3epvUD?p=info
+https://embed.plnkr.co/UgPbPXWSqwlZhD3epvUD/
+https://embed.plnkr.co/arsvfe/
+https://github.com/michaelbromley/angular-es6/tree/master/build/app/services
+http://jasonwatmore.com/post/2014/05/26/angularjs-basic-http-authentication-example
+
+P@ssw0rd
+https://plnkr.co/edit/H4SVl6?p=info
+https://embed.plnkr.co/H4SVl6/
+
+

@@ -1,0 +1,11 @@
+@import "../../app-css-globals.scss";
+
+navbar {
+  display: block;
+
+  nav {
+    .material-icons {
+      vertical-align: bottom;
+    }
+  }
+}

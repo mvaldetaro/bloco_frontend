@@ -1,0 +1,59 @@
+.footer {
+  background: #212121;
+  padding: 32px;
+  color: #fff;
+}
+
+.footer .payment {
+
+}
+
+.footer .payment img {
+  width: 100%;
+}
+
+.footer .rights {
+  font-size: .65em;
+  letter-spacing: 1px;
+  padding: 16px 0;
+  text-align: right;
+}
+
+.footer .social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-title,
+.social-title {
+  margin-bottom: 16px;
+}
+.social .social-item {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.social .social-item a {
+  background: url('../images/mini-social-icons.png') no-repeat;
+  display: block;
+  height: 48px;
+  width: 48px;
+  border-radius: 3px;
+}
+
+.social .social-item a[title="Facebook"] {
+  background-position: -16px -101px;
+}
+
+.social .social-item a[title="Twitter"] {
+  background-position: -688px -101px;
+}
+
+.social .social-item a[title="Youtube"] {
+  background-position: -859px -103px;
+}
+
+.social .social-item a span {
+  display: none;
+}

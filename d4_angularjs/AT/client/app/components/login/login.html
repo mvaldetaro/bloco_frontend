@@ -1,0 +1,17 @@
+<main class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>{{$ctrl.nome}}</h1>
+      <hr>
+      <div uib-alert ng-show='$ctrl.alertType' ng-class="'alert-' + ($ctrl.alertType || 'warning')">{{$ctrl.msg}}</div>
+      <loginform validator="$ctrl.validator($event)"></loginform>
+      <br>
+      <div class="alert alert-info" ng-repeat="user in $ctrl.users">
+        <span>
+        Login: {{user.login}}<br>
+        Senha: {{user.senha}}
+        </span>
+      </div>
+    </div>
+  </div>
+</main>

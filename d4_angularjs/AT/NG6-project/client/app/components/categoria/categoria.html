@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{$ctrl.titulo}}</h1>
+  <hr>
+  <div class="col-xs-6">
+    <categoria-list
+      itens="$ctrl.categorias"
+      configuracao-init="$ctrl.configuracaoInit"
+      on-item-clicked="$ctrl.onCategoriaClicked($event)"
+      criar-novo-item="$ctrl.criarNovoCategoria($event)"
+      resetar-itens="$ctrl.resetarCategorias($event)">
+    </categoria-list>
+  </div>
+  <div class="col-xs-6" ui-view>
+
+  </div>
+</div>

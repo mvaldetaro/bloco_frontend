@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>GK Fashion</title>
+  <meta name="description" content="Melhor loja de roupas femininas do Rio de Janeiro">
+  <meta name="keywords" content="roupa,mulher,loja">
+  <meta name="robots" content="index, follow">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1><a href="index.html">GK Fashion</a></h1>
+      <p class="sacola">Nenhum item na sacola de compras</p>
+      <nav class="menu-principal">
+        <ul>
+          <li><a href="#">Sua Conta</a></li>
+          <li><a href="#">Lista de Desejos</a></li>
+          <li><a href="cartao_fidelidade.html">Cartão Fidelidade</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="contato.html" method="post">
+          <div class="row">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" minlength="12" maxlength="30" title="Somente letras" required autofocus pattern="[a-zA-Z\s]+$" placeholder="Digite aqui seu nome">
+          </div>
+          <div class="row">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" title="Ex. seunome@gmail.com.br" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Digite aqui seu email">
+          </div>
+          <div class="row">
+            <label for="motivo">Motivo:</label>
+            <select name="motivo" id="motivo">
+              <option value="1">Sugestão</option>
+              <option value="2">Critíca</option>
+              <option value="3">Elogio</option>
+              <option value="4">Outros</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="comentarios">Comentários:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="255"></textarea>
+          </div>
+          <div class="row">
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="caixa-footer">
+        <img src="images/logo_rodape.png" alt="GK Fashion">
+        <p>&copy; Copyright GK Fashion</p>
+        <ul class="social">
+          <li><a href="http://www.facebook.com/gkfashion">Facebook</a></li>
+          <li><a href="http://www.twitter.com/gkfashion">Twitter</a></li>
+          <li><a href="http://plus.google.com/gkfashion">Google+</a></li>
+        </ul>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>

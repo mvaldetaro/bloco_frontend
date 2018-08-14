@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Magno Valdetaro">
+  <meta name="description" content="TP2 da disciplina de Interfaces com HTML e CSS do Bloco de Desenvolvimento Front-End">
+  <meta name="keywords" content="html,css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombi Coffee</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <!--[if lt IE 9]>
+    <script src="html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body id="cardapio-page">
+  <div id="container">
+    <header class="header">
+      <h1>Kombi Coffee</h1>
+      <img src="images/logo_kombi_coffee.png" alt="Kombi Coffee" title="Kombi Coofee">
+    </header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="local.html">Local</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Cardápio</h1>
+      <!-- Bebidas Quentes -->
+      <section>
+        <h2>Bebidas</h2>
+        <p>Cafés com sabores incríveis. Bebidas para descobrir e apreciar.</p>
+
+        <h3>Cappucinos</h3>
+        <table class="table cardapio">
+          <tr>
+            <td class="col-1-3">
+              <img src="images/cappuccino_tradicional.jpg" alt="Cappuccino Tradicional">
+              <p>Cappuccino Tradicional</p>
+              <p class="price">R$8,00</p>
+            </td>
+            <td class="col-1-3">
+              <img src="images/cappuccino_com_canela.jpg" alt="Cappuccino Canela">
+              <p>Cappuccino Canela</p>
+              <p class="price">R$8,00</p>
+            </td>
+            <td class="col-1-3">
+              <img src="images/cappucino_chocolate.jpg" alt="Cappuccino Chocolate">
+              <p>Cappuccino Chocolate</p>
+              <p class="price">R$9,00</p>
+            </td>
+          </tr>
+        </table>
+
+        <h3>Clássicos com café</h3>
+        <table class="table cardapio">
+          <tr>
+            <td class="col-1-3">
+              <img src="images/cafe_americano.jpg" alt="Café Americano">
+              <p>Café Americano</p>
+              <p class="price">R$8,00</p>
+            </td>
+            <td class="col-1-3">
+              <img src="images/cofe_mocha.jpg" alt="Coffee Mocha">
+              <p>Coffee Mocha</p>
+              <p class="price">R$12,00</p>
+            </td>
+            <td class="col-1-3">
+              <img src="images/doce_de_leite_latte.jpg" alt="Doce de Leite Latte">
+              <p>Doce de Leite Latte</p>
+              <p class="price">R$11,00</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      </main>
+      <hr>
+      <footer>
+        <p>Copyright</p>
+      </footer>
+    </div>
+
+  </body>
+  </html>

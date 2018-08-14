@@ -1,0 +1,41 @@
+.header--home {
+  color: rgba(255,255,255,.87);
+}
+
+.header--home a {
+  color: rgba(255,255,255,.87);
+}
+
+.header--home ul {
+  list-style: none;
+}
+
+.header--home ul li {}
+
+.header--home {
+  background-color: #213C4F;
+}
+
+.header-bartop {
+  padding: 16px 0;
+}
+
+.header-bartop .brand {
+  display: inline-block;
+  float: left;
+}
+
+.header-bartop .brand h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  line-height: 40px;
+}
+
+.header-bartop .brand h1 a:hover{
+  text-decoration: none;
+}
+
+.header-bartop .userlog {
+  float: right;
+}

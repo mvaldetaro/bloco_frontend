@@ -1,0 +1,35 @@
+<form name="formLogin" accept-charset="utf-8" ng-model="$ctrl.logger">
+  <div class="form-group">
+    <label for="login">Login:</label>
+    <input  id="login"
+    type="text"
+    name="login"
+    class="form-control"
+    ng-model="$ctrl.login"
+    ng-minlength="3"
+    ng-maxlength="10"
+    required />
+    <div ng-messages="formLogin.login.$error" role="alert">
+      <div ng-message="required">Preencha o campo Login</div>
+      <div ng-message="minlength, maxlength">O campo login deve ter entre 3 e 10 caracteres.</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="senha">senha:</label>
+    <input  id="senha"
+    type="password"
+    name="senha"
+    class="form-control"
+    ng-model="$ctrl.senha"
+    ng-minlength="3"
+    ng-maxlength="10"
+    required />
+    <div ng-messages="formLogin.senha.$error" role="alert">
+      <div ng-message="required">Preencha o campo senha</div>
+      <div ng-message="minlength, maxlength">O campo login deve ter entre 3 e 10 caracteres.</div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button ng-click="$ctrl.onClickBtn({$event:$ctrl.logger})" class="btn btn-primary" >Acessar</button>,
+  </div>
+</form>

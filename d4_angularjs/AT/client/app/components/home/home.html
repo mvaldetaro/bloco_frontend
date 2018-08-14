@@ -1,0 +1,22 @@
+<main class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+      <div class="row" ng-repeat="noticia in $ctrl.noticias.slice((($ctrl.currentPage-1)*$ctrl.itemsPerPage), (($ctrl.currentPage)*$ctrl.itemsPerPage)) track by noticia.id">
+        <div class="box clearfix">
+          <div class="col-sm-2">
+            <img ng-src="{{noticia.imagem}}" alt="" class="img-responsive">
+            <p rel="author">por: {{noticia.autor}}</p>
+          </div>
+          <div class="col-sm-10">
+            <time class="badge">{{noticia.data | date:'shortDate'}}</time>
+            <h2>{{noticia.titulo}}</h2>
+            <p>{{noticia.mensagem}}</p>
+          </div>
+        </div>
+      </div>
+
+      <ul uib-pagination total-items="$ctrl.totalItems" ng-model="$ctrl.currentPage" ng-change="$ctrl.pageChanged()" class="pagination-sm" items-per-page="$ctrl.itemsPerPage"></ul>
+    </div>
+  </div>
+</main>

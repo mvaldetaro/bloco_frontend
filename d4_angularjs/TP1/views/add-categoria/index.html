@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="todo">
+<head>
+  <meta charset="UTF-8">
+  <title>TODOs</title>
+  <script src="../../js/angular.min.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body ng-controller="addCategoriaCtrl as $ctrl">
+  <div class="container" >
+    <div class="nav-bar">
+    <div class="brand">TODOs - {{$ctrl.titulo}}</div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a class="btn" href="../add-categoria/index.html">+ Categoria</a>
+        </li>
+        <li>
+          <a class="btn" href="../add-tarefa/index.html">+ Tarefa</a>
+        </li>
+        <li>
+          <a class="btn" href="../home/index.html" >Home</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="categorias_lista">
+      <form ng-submit="$ctrl.add($ctrl.categoria)">
+        <input ng-model="$ctrl.categoria" type="text" placeholder="Adicione uma categoria e pressione enter">
+      </form>
+
+      <alert ng-show='alertType' type="{{alertType}}" close='removeAlert()'>{{alertType}} Alert</alert>
+
+      <div class="{{$ctrl.alertClass}}">
+        {{$ctrl.msg}}
+      </div>
+
+      <div>
+        <h2>Categorias disponíveis</h2>
+        <ul>
+          <li ng-repeat="categoria in $ctrl.categorias track by $index">{{categoria}}</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <script src="../../app.js"></script>
+  <script src="add-categoria.js"></script>
+</body>
+</html>

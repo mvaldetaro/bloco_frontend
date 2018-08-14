@@ -1,0 +1,25 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(0, 0, 0, 80%) !important;
+}
+
+a {
+  color: #03a9f5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.box {
+  background: #fff;
+  margin-top: -32px;
+  border-radius: 3px;
+  padding: 32px;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+}

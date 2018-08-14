@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(250,250,250);
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  color: rgba(255,255,255,0.87);
+  background-color: rgb(16,108,200);
+}
+
+footer {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  padding: 16px 32px;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  border-top: 1px solid #ddd;
+}
+
+.card {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+}
+
+section > button {
+  color: rgb(33,33,33)!important;
+  background-color: rgb(255, 255, 255)!important;
+}

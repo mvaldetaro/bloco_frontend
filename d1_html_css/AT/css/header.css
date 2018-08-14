@@ -1,0 +1,64 @@
+header .sacola {
+
+  text-align: center;
+  padding: 15px 45px;
+  min-height: 48px;
+}
+
+header .menu-principal {
+  text-align: center;
+}
+
+header h1 a {
+    height: 134px;
+    width: 130px;
+    display: block;
+    text-indent: -9999px; /* esconder texto */
+    background: url('../images/logo_GK.png');
+    margin: 0 auto;
+  }
+
+  header .menu-principal li a {
+    display: block;
+    padding: 8px;
+  }
+
+@media (min-width: 720px) {
+
+  header {
+    position: relative;
+  }
+
+  header .sacola {
+    background: url('../images/sacola.png') no-repeat top right;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 45px;
+  }
+
+  header .menu-principal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  header .menu-principal li {
+    display: inline-block;
+  }
+
+  header .menu-principal li a:hover {
+    color: #00BCD4;
+    text-decoration: none;
+  }
+
+  header h1 a {
+    height: 134px;
+    width: 130px;
+    display: block;
+    text-indent: -9999px; /* esconder texto */
+    background: url('../images/logo_GK.png');
+    margin-left: 40px;
+  }
+}

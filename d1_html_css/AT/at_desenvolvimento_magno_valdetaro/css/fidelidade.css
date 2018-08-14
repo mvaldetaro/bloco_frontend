@@ -1,0 +1,27 @@
+#fidelidade table {
+  border: 1px solid #3E2723;
+  margin: 15px;
+  background: #f2eded;
+}
+
+#fidelidade tr:nth-child(even) {
+  background: #E0E0E0;
+}
+
+#fidelidade td,
+#fidelidade th {
+  border: 1px solid #3E2723;
+  padding: 5px;
+  vertical-align: middle;
+  font-size: .8em;
+  line-height: 1.2em;
+}
+
+@media (min-width: 720px) {
+  #fidelidade td,
+  #fidelidade th {
+    padding: 8px;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+}

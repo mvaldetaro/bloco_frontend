@@ -1,0 +1,35 @@
+.mainnav {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.main-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.mainnav ul li {
+  padding: 8px 24px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.mainnav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .85em;
+}
+
+.mainnav-item {
+  transition: all .2s ease-out;
+}
+
+.mainnav-item:hover {
+  background: rgba(0, 0, 0, .20);
+  transition: all .2s ease-in;
+}
+
+.mainnav-item--active {
+  background: rgba(0, 0, 0, .20);
+}

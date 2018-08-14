@@ -1,0 +1,39 @@
+.category {
+  border-bottom: 1px solid rgba(0, 0, 0, .20 );
+  margin-bottom: 32px;
+}
+
+section.category:last-child{
+  border: none;
+}
+
+.category-title {
+  font-size: 1.5em;
+  display: inline-block;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.category-title:before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, .87);
+}
+
+.category-item {
+
+}
+
+.category-item-image {
+  width: 100%;
+  height: auto;
+}
+
+.category-item-title {
+  text-align: center;
+  font-size: .85em;
+  display: block;
+  padding: 8px;
+}

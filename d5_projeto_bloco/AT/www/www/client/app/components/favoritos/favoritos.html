@@ -1,0 +1,24 @@
+<header class="header favoritos">
+  <div class="container">
+    <h1>Favoritos</h1>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <main class="main" role="main">
+       <ul class="favoritos_list">
+          <li ng-repeat="item in $ctrl.favoritos" ng-click="$ctrl.goTo(item);">
+            <img src="http://lorempixel.com/134/134" alt="{{item.name}}">
+            <div>
+              <h3>{{item.name}} <span class="label label-info">9.1</span></h3>
+              <address>{{item.geoResult.address}}, {{item.geoResult.neighbourhood}}</address>
+              <a href="https://www.google.com/maps/dir/Current+Location/{{item.name}},+Rio de Janeiro,+Brasil" class="btn btn-primary" target="_blank" title="Rotas" rel="external"> <span class="valign-center"><i class="material-icons">directions</i> <span>Rotas</span></span></a>
+              <!--<button class="btn btn-danger" role="button"><span class="valign-center"><i class="material-icons">delete</i> <span> Excluir</button>-->
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </div>
+</div>

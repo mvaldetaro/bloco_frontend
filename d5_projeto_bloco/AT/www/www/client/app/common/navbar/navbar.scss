@@ -1,0 +1,20 @@
+@import "../../app-css-globals.scss";
+
+navbar {
+  display: block;
+  &-default {
+    .navbar-nav {
+      & > li {
+        & > a {
+          color: #595959;
+        }
+      }
+    }
+  }
+
+  nav {
+    .material-icons {
+      vertical-align: bottom;
+    }
+  }
+}

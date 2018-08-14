@@ -1,0 +1,22 @@
+<h3>Editor de {{$ctrl.config.nomeDoItemDaColecao}}</h3>
+<form class="form-horizontal">
+  <span>{{$ctrl.erro}}</span>
+  <div class="form-group" ng-repeat="propriedade in $ctrl.config.propriedades">
+    <label for="{{propriedade}}" class="col-md-3 control-label">{{propriedade}}:</label>
+    <div class="col-md-9">
+      <input type="text"
+              class="form-control"
+              placeholder="{{propriedade}}"
+              ng-model="$ctrl.item[propriedade]"
+              ng-disabled="propriedade==='id'"
+              id="{{propriedade}}">
+    </div>
+  </div>
+  <button class="btn btn-primary form-control"
+          ng-click="$ctrl.editing ?
+          $ctrl.modificarItem({$event:$ctrl.item}) :
+          $ctrl.novoItem({$event:$ctrl.item})">
+  Enviar
+</button>
+
+</form>

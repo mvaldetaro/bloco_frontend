@@ -1,0 +1,170 @@
+.busca,
+.menu-departamentos {
+  background: #dcdcdc;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-departamentos {
+  clear: both;
+  margin: 10px 0;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+  margin: 10px;
+}
+
+.busca {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  float: left;
+  width: 100%;
+}
+
+.busca form input {
+  vertical-align: middle;
+}
+
+.busca form input[type="search"] {
+  width: 170px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.caixa-destaque {
+  margin-top: 10px;
+}
+
+.menu-departamentos li {
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+  }
+
+  .menu-departamentos li a {
+    color: gray;
+  }
+
+  .menu-departamentos li ul {
+    display: none;
+  }
+
+  .menu-departamentos li:hover ul {
+    display: block;
+  }
+
+  .menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+  }
+
+  .menu-departamentos ul ul li a:before {
+    content: "\276F";
+    padding-right: 3px;
+    opacity: .5;
+  }
+
+  .imgr {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .painel {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  .painel h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .8);
+  }
+
+  .painel h2:before {
+    content: "\2756";
+    padding-right: 5px;
+    opacity: .4;
+  }
+
+  .painel a {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .painel.novidades {
+    background: #f5dcdc;
+    background-image: linear-gradient(to bottom, #f5dcdc, #bebef4);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1);
+  }
+
+  .painel.mais-vendidos {
+    background: #dcdcf5;
+    background-image: linear-gradient(to bottom, #dcdcf5, #f4bebe);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1);
+  }
+
+  .painel ol li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: .7s all ease-out;
+  }
+
+  .painel ol li:hover {
+    box-shadow: 14px 28px 6px rgba(0,0,0,0.23);
+    background: rgba(255, 255, 255, .8);
+    transform: scale(1.2) rotate(-5deg);
+    transition: .7s all ease-in;
+  }
+
+  .painel figure,
+  .painel figcaption {
+    margin: 0;
+    padding: 0;
+  }
+
+@media (min-width: 720px) {
+
+  .painel {
+    width: 332px;
+  }
+
+  .painel ol {
+    text-align: center;
+  }
+
+  .painel.novidades {
+    float: left;
+  }
+
+  .painel.mais-vendidos {
+    float: right;
+  }
+}
+
+@media (min-width: 960px) {
+  .busca,
+  .menu-departamentos {
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+  }
+
+  .painel {
+    width: 445px;
+  }
+
+  .painel ol li {
+    vertical-align: top;
+    width: 140px;
+  }
+
+}
